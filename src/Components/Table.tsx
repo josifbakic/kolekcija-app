@@ -15,7 +15,7 @@ const Table = ({podaci}: Props) => {
                 <th>City</th>
                 <th>Address</th>
             </tr>
-            {podaci.map(x=>{return <tr>
+            {podaci.map(x=>(<tr>
                 <td>{x.id}</td>
                 <td>{x.name}</td>
                 <td>{x.surname}</td>
@@ -23,9 +23,9 @@ const Table = ({podaci}: Props) => {
                 <td>{x.createdDate}</td>
                 <td>{x.city}</td>
                 <td>{x.address}</td>
-            </tr>})}
+            </tr>))}
         </table>
     )
 }
 
-export default Table
+export default Table;
